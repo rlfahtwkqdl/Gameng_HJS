@@ -415,14 +415,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e801585a7f3ea43afc2f2cf76e88c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RewardCalc
-  playSeconds: 3725
-  gold: 1234
-  members: 4
-  kills: 7
-  expPerKill: 35
-  totalDamage: 250
-  hits: 20
-  expRate: 1.5
+  playSeconds: 7260
+  gold: 100
+  members: 3
+  kills: 3
+  expPerKill: 33
+  totalDamage: 7
+  hits: 2
+  expRate: 1.2
 --- !u!114 &1519256680
 MonoBehaviour:
   m_ObjectHideFlags: 0

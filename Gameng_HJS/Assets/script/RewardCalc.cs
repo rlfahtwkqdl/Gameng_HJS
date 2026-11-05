@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RewardCalc : MonoBehaviour
 {
@@ -33,9 +33,25 @@ public class RewardCalc : MonoBehaviour
     void Exp()
     {
         int DExp = (kills*expPerKill);
-        
-        
-        Debug.Log(DExp*expRate + (DExp));
+        float FExp = (DExp * expRate);
+
+
+        Debug.Log("경험치 " + (int)FExp + " (기본 " + DExp + ")");
     }
 
+    [ContextMenu("뜯기력")]
+    void NextLv()
+    {
+        int DExp = (kills * expPerKill);
+        float FExp = (DExp * expRate);
+        float Lv = (FExp / 100 + 1);
+
+        Debug.Log("Lv" + (int)Lv + " 다음 레벨까지 " + (100 - (int)FExp % 100));
+    }
+
+    [ContextMenu("평균 호두 적중")]
+    void DMG()
+    {
+        Debug.Log("평균 데미지 " + (float)totalDamage / hits);
+    }
 }
